@@ -1,0 +1,41 @@
+day 1(april 18)
+    i spent the first day on research and getting a api key.
+    the first part of the script was written in python.
+    i also spent 6 hours installing a windows vm.(my wifi is crap)
+day 2 (april23)
+    after putting this project off for a unreasonable amount of time i rewrote my python code
+    into powershell so i could reuse my code from the pokemon api thing.
+    the code now writes the JSon data of the picture to Json file, and renames the file into the $OBJ.title member.
+    ran into a bit of an issue as todays picture from nasa is a youtube video. (https://apod.nasa.gov/apod/ap210423.html) 
+    rather than code out a way to get older dates i think i will continue this later.
+day 3 (april 24)
+    the pic of the day is a video again 
+    changed code to rename file as date instead of the pic title, to improve clarity 
+    added the 'thumbs=True' to the get pic uri thing. this will add the 'thumbnail_url' member to the json file if it is a video
+    picture download works now, and will also get youtube thumnail if its a video.
+    did research into how sql database files work, as well as csv 
+    this was a helpful source. https://www.tutorialfor.com/blog-234437.htm 
+day 4(april 25)
+    started work on the database system, decided to code it
+    in python as i have done that in a previus lab before.
+    made a test db file in db browser but i have been unable to get 
+    python to read the json files. been expiramenting with "with open" in python 
+day 5(april 26)
+    spent several hours debugging python, as it would not read the "pic.json" file.
+    found out my python interpreter was set to "python 2.7.9" for some reason.
+    the powershell script encoded the output json files as "UFT-16-LE" which created NULL bytes that wrecked havoc on the python script.
+    fixed the issue by telling python to read it as utf-16 encoded file.
+    script now outputs the contents of pic.json as dictionary.
+day 6 (april 27)
+    i noticed the hash value provided in python is wrong so i spent time researching running a powershell script in python.
+    i got the powershell "mini" script to work. research sourced(https://stackoverflow.com/questions/21944895/running-powershell-script-within-python-script-how-to-make-python-print-the-pow)
+    database is finished. small issue is that the hashs have brackets and "'" marks but the format is the same, so it still works.
+    had to use the time module in "scripttwo.py" to stop the script for a few seconds, to give time for the powershell
+    subscript to provide hash value. which it provides via a txt file. (i could not get direct communication between the scripts.)
+day 7
+    finished the set background script and the main python script which will run everything
+    note: main script.py must be run in admin mode
+
+    
+
+    
